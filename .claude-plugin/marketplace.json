@@ -1,0 +1,14 @@
+{
+  "name": "heychunkydev",
+  "description": "Chunky's public plugin. Everything in it needs no account.",
+  "owner": {
+    "name": "heychunky"
+  },
+  "plugins": [
+    {
+      "name": "chunky",
+      "source": "./",
+      "description": "Plan an app and design it, with nothing to sign up for. Woken by \"hey chunky\"."
+    }
+  ]
+}
