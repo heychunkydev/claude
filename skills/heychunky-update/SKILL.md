@@ -18,12 +18,21 @@ Two commands, neither of which changes anything:
 
 ```bash
 claude plugin list --json
-curl -fsS https://raw.githubusercontent.com/heychunkydev/claude/main/.claude-plugin/plugin.json
+curl -fsS https://api.github.com/repos/heychunkydev/claude/tags
 ```
 
 The first is what is installed — find the entry whose `id` is
-`chunky@heychunky` and read its `version`. The second is what is published;
-read its `version`.
+`chunky@heychunky` and read its `version`. The second is what is published: the
+highest tag named `chunky--vX.Y.Z`.
+
+**Read the tags, not `plugin.json` on `main`.** Two reasons, and the second was
+learned the hard way. A tag is only created by `claude plugin tag`, which
+refuses unless `plugin.json` and the marketplace entry already agree — so a tag
+means a release somebody meant. And `raw.githubusercontent.com` caches: minutes
+after 0.2.0 was tagged and pushed, the raw `plugin.json` on `main` was still
+answering `0.1.0` while the tag was already there. A cached file cannot be
+told apart from an unchanged one, so the check would have said *up to date* and
+been wrong.
 
 Then compare, and say which of the three it is:
 
@@ -33,16 +42,19 @@ Then compare, and say which of the three it is:
 | **published is higher** | an update is available. Say both numbers, say what changed, then offer to apply it. |
 | **no `chunky@heychunky` installed** | it was not installed from the marketplace. See *Installed some other way*, below. |
 
-**A failed `curl` is not "up to date".** No network, GitHub down, or a proxy in
-the way all produce silence, and silence read as agreement is how somebody sits
-on an old version for a month. Say the check could not run, and why.
+**A failed `curl` is not "up to date".** No network, GitHub down, a proxy in the
+way, or the API's unauthenticated rate limit all produce silence, and silence
+read as agreement is how somebody sits on an old version for a month. Say the
+check could not run, and why.
 
 ## What changed
 
-`CHANGELOG.md` in the same repository, newest first:
+`CHANGELOG.md`, read **at the tag** rather than at `main` — a tag points at one
+commit forever, so what comes back is what that release actually said and the
+cache cannot be wrong about it:
 
 ```bash
-curl -fsS https://raw.githubusercontent.com/heychunkydev/claude/main/CHANGELOG.md
+curl -fsS https://raw.githubusercontent.com/heychunkydev/claude/chunky--v<version>/CHANGELOG.md
 ```
 
 Read the entries between the installed version and the published one and say

@@ -4,6 +4,14 @@ Newest first. `heychunky-update` reads this file to say what changed between
 the version somebody has and the one that is published, so an entry is written
 for a person deciding whether to update — not for us.
 
+## 0.2.1
+
+**The version check reads git tags, not `plugin.json` on `main`.** Minutes after
+0.2.0 was published, `raw.githubusercontent.com` was still serving the previous
+version number from cache — so the check would have said *up to date* and been
+wrong, which is the one answer it must never get wrong. Tags are immutable and
+are only created by a command that validates the release first.
+
 ## 0.2.0
 
 **`heychunky-update`** — ask *"hey chunky, are you up to date?"* and Chunky
