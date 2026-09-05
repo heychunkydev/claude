@@ -6,7 +6,12 @@ Skills for Claude Code that need **no account, no key and no invite**.
 /plugin marketplace add heychunkydev/claude
 ```
 
-Then say `hey chunky` and ask for something.
+Then say `hey chunky` and ask for something. The plugin installs as
+`chunky@heychunky`.
+
+The marketplace is named `heychunky` rather than `heychunkydev` on purpose: the
+private plugin's marketplace already carries that name, and two marketplaces
+answering to one name collide for anybody holding both — which is us.
 
 ## What is in here
 
