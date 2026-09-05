@@ -88,6 +88,7 @@ rather than a colour palette. No account, no plugin, nothing to sign up for.
 | | |
 |---|---|
 | `heychunky-plan` | the problem, the people, the brief |
+| `heychunky-update` | whether you are on the latest version, and getting there |
 
 That table is the whole list. A skill missing from it is a skill nobody knows to
 reach for, so anything added goes in here in the same commit.
