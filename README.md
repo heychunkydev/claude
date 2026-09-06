@@ -6,11 +6,17 @@ Nothing here needs an account, a key or an invite. It is a conversation and some
 markdown files in your own home directory. Nothing is uploaded and nothing talks
 to a server.
 
-```
-/plugin marketplace add heychunkydev/claude
+```bash
+claude plugin marketplace add heychunkydev/claude
+claude plugin install chunky@heychunky
 ```
 
-Then say `hey chunky` in Claude Code. The plugin installs as `chunky@heychunky`.
+Then start Claude Code and say `hey chunky`.
+
+**Both lines.** Adding a marketplace installs nothing — after the first command
+on its own, `claude plugin list` reports no plugins and `hey chunky` does
+nothing. A marketplace is where plugins are found; the install is what puts one
+on your machine.
 
 ---
 

@@ -4,6 +4,14 @@ Newest first. `heychunky-update` reads this file to say what changed between
 the version somebody has and the one that is published, so an entry is written
 for a person deciding whether to update — not for us.
 
+## 0.2.2
+
+**The install instructions were one command short.** Adding a marketplace
+installs nothing — run against a clean `HOME`, `claude plugin list` reports no
+plugins after the add, so anybody following the old README ended up with a
+marketplace, no plugin, and a `hey chunky` that did nothing. Two commands now,
+and the README says why the second is not optional.
+
 ## 0.2.1
 
 **The version check reads git tags, not `plugin.json` on `main`.** Minutes after
