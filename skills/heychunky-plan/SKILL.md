@@ -1,7 +1,7 @@
 ---
 name: heychunky-plan
 description: Thinking an app through before any of it gets built — what problem it solves, who it is for, and what the first screen has to do. Creates the app's folder and its plan. Use for "hey chunky, help me think through my idea", "I want to build an app", "plan my app", "I've got an idea". Also triggered by "hey chunky" phrasing.
-delivers: plan.brief plan.name plan.domain-ideas
+delivers: plan.problem plan.people plan.brief plan.scope plan.name plan.domain-ideas
 ---
 
 # Planning an app
