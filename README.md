@@ -94,6 +94,7 @@ rather than a colour palette. No account, no plugin, nothing to sign up for.
 | | |
 |---|---|
 | `heychunky-plan` | the problem, the people, the brief |
+| `heychunky-issue` | working one issue end to end, and proving it |
 | `heychunky-update` | whether you are on the latest version, and getting there |
 
 That table is the whole list. A skill missing from it is a skill nobody knows to
