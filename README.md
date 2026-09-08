@@ -2,9 +2,13 @@
 
 Claude Code skills for thinking an app through **before** you build it.
 
-Nothing here needs an account, a key or an invite. It is a conversation and some
-markdown files in your own home directory. Nothing is uploaded and nothing talks
-to a server.
+Thinking an app through needs no account, no key and no invite. It is a
+conversation and some markdown files in your own home directory — nothing is
+uploaded and nothing talks to a server.
+
+If you do have an account, `heychunky login` takes an API key and Chunky can
+then see the apps your organisation owns. That is an addition, not a gate:
+everything above keeps working signed out.
 
 ```bash
 claude plugin marketplace add heychunkydev/claude
