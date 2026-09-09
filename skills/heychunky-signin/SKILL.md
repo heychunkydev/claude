@@ -33,7 +33,7 @@ thought.
 heychunky login
 ```
 
-Paste an **API key**. Make one at `app.heychunky.com/account`; it starts
+Paste an **API key**. Make one at `console.heychunky.com/account`; it starts
 `hc_live_` and is shown once.
 
 The same command takes an Infisical client id instead, which is how the people
