@@ -30,35 +30,33 @@ You say:
 
 > **hey chunky, help me think through my idea**
 
-Chunky takes a name for the app so there is somewhere to put the answers, then
-asks three questions — one at a time, waiting for each answer — and writes each
-one down as you settle it.
+Chunky asks for a name, checks that nobody has it, and then asks four more
+questions — one at a time, waiting for each answer — and writes them down.
 
 | | |
 |---|---|
-| **What is wrong today, and for whom?** | Not what the app does. What somebody does *now*, badly, and what it costs them. A problem nobody has a workaround for usually is not a problem yet. |
-| **Who arrives?** | One person, described specifically enough to disagree with. "Small business owners" is a category, and a category cannot tell you what the first screen should say. |
-| **What is it, and what does the first screen do?** | Written last, from the other two — including the part people skip: what is deliberately *not* in it. |
+| **Who is it for?** | One person, described specifically enough to disagree with. "Small business owners" is a category, and a category cannot tell you what the first screen should say. |
+| **What is the problem?** | Not what the app does. What somebody does *now*, badly, and what it costs them. |
+| **What is the value proposition?** | Why they would switch from the workaround. |
+| **What is the solution, at the highest level?** | What the thing is in a sentence — and what it deliberately is not. |
 
-If you have not got a name yet, Chunky offers five and searches the web for each
-one first — whether it is already somebody's product, whether it collides with a
-trademark worth avoiding, whether it is distinctive enough to find later. A
-working name is enough to start; renaming a folder costs nothing.
+The questions are Chunky's, not the plugin's: they come from the same API the
+console uses, so the two never disagree about what is asked.
 
 ## What it leaves on your machine
 
 ```
 ~/.heychunky/apps/<name>/
-  README.md          what this is, in one line, and when it started
-  plan/
-    problem.md       what is wrong today, and for whom
-    people.md        who arrives, and what they already know
-    brief.md         the one page everything later is checked against
-    decisions.md     what was decided and why, appended as it changes
+  APP.md             the answers, under one heading each, and the date
+  decisions.md       what was decided and why, appended as it changes
 ```
 
 Plain markdown. Yours. Open it, edit it, put it in your own git repository,
 delete it — none of that needs Chunky.
+
+If you are signed in, the app is also registered in your organisation at the
+end, which is where the next phases pick it up. If you are not, nothing is
+missing: the file is the whole record.
 
 `decisions.md` is the one people underrate. Any file can say the app is for
 freelancers; only that one says it was for agencies until somebody worked out
@@ -97,7 +95,7 @@ rather than a colour palette. No account, no plugin, nothing to sign up for.
 
 | | |
 |---|---|
-| `heychunky-plan` | the problem, the people, the brief |
+| `heychunky-plan` | phase 0: who, the problem, the value, the name, the solution |
 | `heychunky-issue` | working one issue end to end, and proving it |
 | `heychunky-update` | whether you are on the latest version, and getting there |
 

@@ -1,7 +1,7 @@
 {
   "name": "chunky",
   "description": "Chunky helps you think an app through before you build it — what it's for, who it's for, what to call it — and then gives it a real design. All of that works with no account, no key and no invite. Sign in with an API key and it can also see the apps your organisation owns. Woken by \"hey chunky\".",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": {
     "name": "heychunky"
   }

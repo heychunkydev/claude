@@ -4,6 +4,16 @@ Newest first. `heychunky-update` reads this file to say what changed between
 the version somebody has and the one that is published, so an entry is written
 for a person deciding whether to update — not for us.
 
+## 0.4.0
+
+**`heychunky-plan` is phase 0, and it is thin.** Five questions now — who it
+is for, what is wrong today, why they would switch, what to call it, and what
+it is — written to one `APP.md` rather than three files under `plan/`. The
+questions come from Chunky's API, so the console asks exactly the same ones;
+the skill holds none of its own. The name is checked against an open endpoint
+before it is accepted, and if you are signed in the app is registered at the
+end. Signed out, nothing changes: the file is the whole record.
+
 ## 0.2.2
 
 **The install instructions were one command short.** Adding a marketplace
