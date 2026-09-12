@@ -6,6 +6,11 @@ for a person deciding whether to update — not for us.
 
 ## 0.4.0
 
+**`heychunky-design`** — phase 1. Three questions, then two or three
+directions Chunky picks from the seventy-six design languages against your
+brief, each with a reason; `DESIGN.md` next to `APP.md`, and the choice
+recorded on the app if you are signed in.
+
 **`heychunky-plan` is phase 0, and it is thin.** Five questions now — who it
 is for, what is wrong today, why they would switch, what to call it, and what
 it is — written to one `APP.md` rather than three files under `plan/`. The

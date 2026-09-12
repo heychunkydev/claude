@@ -96,6 +96,7 @@ rather than a colour palette. No account, no plugin, nothing to sign up for.
 | | |
 |---|---|
 | `heychunky-plan` | phase 0: who, the problem, the value, the name, the solution |
+| `heychunky-design` | phase 1: what kind of thing, what vibe, what look — and a direction chosen from seventy-six |
 | `heychunky-issue` | working one issue end to end, and proving it |
 | `heychunky-update` | whether you are on the latest version, and getting there |
 
