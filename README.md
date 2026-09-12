@@ -98,6 +98,7 @@ rather than a colour palette. No account, no plugin, nothing to sign up for.
 | `heychunky-plan` | phase 0: who, the problem, the value, the name, the solution |
 | `heychunky-design` | phase 1: what kind of thing, what vibe, what look — and a direction chosen from seventy-six |
 | `heychunky-build` | phases 2, 3, 4 and 8: the repository, hosting, a domain, a database — needs a key |
+| `heychunky-release` | phases 6 and 7: a release to next with a version, and a promotion to production — needs a key |
 | `heychunky-issue` | working one issue end to end, and proving it |
 | `heychunky-update` | whether you are on the latest version, and getting there |
 

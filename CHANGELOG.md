@@ -6,6 +6,10 @@ for a person deciding whether to update — not for us.
 
 ## 0.4.0
 
+**`heychunky-release`** — phases 6 and 7. A release takes `dev` to next
+and writes a version down with its changelog; a promotion takes next to
+production, and is asked for in its own sentence, never offered.
+
 **`heychunky-build`** — phases 2, 3, 4 and 8. With a key, Chunky makes
 the repository, then hosts it, then attaches a domain, then gives it a
 database, one phase per ask, each step reported as it settles. The first
