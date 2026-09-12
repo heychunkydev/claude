@@ -6,6 +6,11 @@ for a person deciding whether to update — not for us.
 
 ## 0.4.0
 
+**`heychunky-build`** — phases 2, 3, 4 and 8. With a key, Chunky makes
+the repository, then hosts it, then attaches a domain, then gives it a
+database, one phase per ask, each step reported as it settles. The first
+skill in this plugin that needs a key, and it says so before doing anything.
+
 **`heychunky-design`** — phase 1. Three questions, then two or three
 directions Chunky picks from the seventy-six design languages against your
 brief, each with a reason; `DESIGN.md` next to `APP.md`, and the choice
