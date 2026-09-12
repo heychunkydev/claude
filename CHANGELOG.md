@@ -4,6 +4,30 @@ Newest first. `heychunky-update` reads this file to say what changed between
 the version somebody has and the one that is published, so an entry is written
 for a person deciding whether to update — not for us.
 
+## 0.4.0
+
+**`heychunky-release`** — phases 6 and 7. A release takes `dev` to next
+and writes a version down with its changelog; a promotion takes next to
+production, and is asked for in its own sentence, never offered.
+
+**`heychunky-build`** — phases 2, 3, 4 and 8. With a key, Chunky makes
+the repository, then hosts it, then attaches a domain, then gives it a
+database, one phase per ask, each step reported as it settles. The first
+skill in this plugin that needs a key, and it says so before doing anything.
+
+**`heychunky-design`** — phase 1. Three questions, then two or three
+directions Chunky picks from the seventy-six design languages against your
+brief, each with a reason; `DESIGN.md` next to `APP.md`, and the choice
+recorded on the app if you are signed in.
+
+**`heychunky-plan` is phase 0, and it is thin.** Five questions now — who it
+is for, what is wrong today, why they would switch, what to call it, and what
+it is — written to one `APP.md` rather than three files under `plan/`. The
+questions come from Chunky's API, so the console asks exactly the same ones;
+the skill holds none of its own. The name is checked against an open endpoint
+before it is accepted, and if you are signed in the app is registered at the
+end. Signed out, nothing changes: the file is the whole record.
+
 ## 0.2.2
 
 **The install instructions were one command short.** Adding a marketplace
